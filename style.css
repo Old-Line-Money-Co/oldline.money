@@ -2,16 +2,16 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column; /* Added to arrange content in a column */
-  justify-content: space-between; /* Vertically space content */
-  align-items: center;
-  height: 100vh;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  min-height: 100vh; /* Use min-height to ensure footer alignment */
 }
 
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  flex-grow: 1; /* Allow the center div to grow vertically */
 }
 
 .logo-container img {
@@ -21,5 +21,6 @@ body {
 
 .footer {
   text-align: center;
-  padding-bottom: 20px; /* Add some spacing at the bottom */
+  padding: 20px 0; /* Add padding to top and bottom */
+  background-color: #f0f0f0; /* For visibility */
 }
