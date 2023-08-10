@@ -1,17 +1,15 @@
-body {
+body, html {
   margin: 0;
-  display: flex;
-  flex-direction: column; /* Added to arrange content in a column */
-  justify-content: center; /* Center vertically */
-  align-items: center; /* Center horizontally */
-  min-height: 100vh; /* Use min-height to ensure footer alignment */
+  padding: 0;
+  height: 100%;
 }
 
-.center {
+.main-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  flex-grow: 1; /* Allow the center div to grow vertically */
+  height: 100vh;
 }
 
 .logo-container img {
@@ -21,6 +19,6 @@ body {
 
 .footer {
   text-align: center;
-  padding: 20px 0; /* Add padding to top and bottom */
-  background-color: #f0f0f0; /* For visibility */
+  padding: 20px 0;
+  background-color: #f0f0f0;
 }
