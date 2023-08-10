@@ -1,7 +1,8 @@
 body {
   margin: 0;
   display: flex;
-  justify-content: center;
+  flex-direction: column; /* Added to arrange content in a column */
+  justify-content: space-between; /* Vertically space content */
   align-items: center;
   height: 100vh;
 }
@@ -16,4 +17,9 @@ body {
 .logo-container img {
   max-width: 100%;
   height: auto;
+}
+
+.footer {
+  text-align: center;
+  padding-bottom: 20px; /* Add some spacing at the bottom */
 }
